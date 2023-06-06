@@ -1,7 +1,7 @@
 import { Fragment } from "react";
 import React from "react";
 import foodImage from '../Assets/meals.jpg';
-import classes from './Header.css';
+import classes from './Header.module.css';
 import Description from "../Description/Description";
 const Header=()=>{
     return(
@@ -13,7 +13,7 @@ const Header=()=>{
 
 <div className={classes['main-image']}>
 <img src={foodImage} alt="image"/>
-<Description/>
+
 </div>
 
 </Fragment>

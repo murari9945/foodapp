@@ -1,3 +1,4 @@
+import MealItem from './MealItem'
 import Card from '../UI/Card'
 const Dummy_Meals=[
     {
@@ -26,7 +27,14 @@ const Dummy_Meals=[
     }
 ]
 const MealsList=()=>{
-    const mealsItems=Dummy_Meals.map(meal=><li>{meal.name}</li>)
+    const mealsItems=Dummy_Meals.map((meal)=>(
+        <MealItem 
+        key={meal.id}
+        name={meal.name}
+        description={meal.description}
+        price={meal.price}/>
+
+    ));
     return (
         <section>
             <Card>

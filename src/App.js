@@ -4,12 +4,15 @@ import Header from './components/Layout/Header';
 import Description from './components/Description/Description';
 import { Fragment } from 'react';
 import MealsList from './components/Meals/MealsList';
+import Meals from './components/Meals/Meals';
 
 function App() {
   return (
     <Fragment>
      <Header/>
-     <MealsList/>
+     <main>
+      <Meals/>
+     </main>
     </Fragment>
   );
 }

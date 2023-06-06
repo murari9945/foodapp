@@ -1,4 +1,4 @@
-import classes from './Description.css';
+import classes from './Description.module.css';
 const Description=()=>{
     return (
         <section className={classes.summary}>
